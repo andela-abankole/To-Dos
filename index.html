@@ -40,16 +40,27 @@
     <header id="header" class="">
       <nav class="navbar navbar-default custom navbar-fixed-top">
         <div class="container">
-          <div class="navbar-header">
-          <!-- logo -->
-            <a href="#" class="navbar-brand topnav"><img src="assets/img/logo.png"></a>
-          <!-- logo End-->
-          </div>
+
+      <!-- logo -->
+            <div class="navbar-header pull-right rt-logo">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="assets/img/rt-logo.png">
+                </a>
+            </div>
+
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="assets/img/lt-logo.png">
+                </a>
+            </div>
+      <!-- logo End-->
+
         </div>
       </nav>
     </header>
     <!-- /header End -->
      
+
       <!-- /section -->
       <section>
         <div class="panel panel-default ">
@@ -87,13 +98,16 @@
                       <div class="col-md-12">
                        <table id="ToDoListTable">
                        </table>
+                       <p> All Post for 
+                         <date id="d"></date>
+                       </p>
                      </div>
                     </div>
                 <!-- Stores User Task End-->
                <div class="cls"></div>
-                
+    
               <!-- Clears all done and undone tasks button -->
-                 <div class="row">
+                 <div class="row" style="margin-top: 10px;">
                   <div class="col-md-4">
                     <button class="btn" onclick="deleteAllList('ToDoListTable')"><i class="fa fa-trash-o"></i> Clear All</button>
                   </div>
@@ -105,8 +119,6 @@
           <div class="wrapper"></div>
       </section>
       <!-- /section End-->
-
-
 
 
       <!-- /footer -->
@@ -126,12 +138,15 @@
                   </div>
                   <div class="col-md-12">
                     <ul class="list-inline social-buttons">
+                    <!-- Twitter -->
                       <li class="social-btn">
                         <a href="#" class="btn btn-default social-buttons-a" title="Twitter"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                       </li>
+                    <!-- Facebook -->
                       <li class="social-btn">
                         <a href="#" class="btn btn-default social-buttons-a" title="Facebook"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                       </li>
+                    <!-- Github -->
                       <li class="social-btn">
                         <a href="#" class="btn btn-default social-buttons-a" title="Github"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                       </li>
@@ -144,9 +159,7 @@
             </div>
           </div>
         </footer>
-
       <!-- /footer End-->
-
 
 
 <!--   *********************  Scripts ********************** -->
