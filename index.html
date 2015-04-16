@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!--
+
+;;;;;; +++++++    +++                +++            ++++                 +++       +++++++++    +++++++++
+;;;;; ++++++++ +++   +++          +++   +++      +++    +++             ++++++     +++    +++   +++    +++
+     +++       +++   +++          +++     +++    +++    +++            +++  +++    +++     +++  +++     +++
+     +++       +++   +++   ++++   +++      +++   +++    +++           +++    +++   +++   +++    +++   +++
+     +++`      +++   +++   ++++   +++      +++   +++    +++          +++      +++  ++++++       ++++++
+     +++       +++   +++          +++     +++    +++    +++          ++++++++++++  +++          +++
+     +++       +++   +++          +++   +++      +++    +++          +++      +++  +++          +++     
+     +++          +++                +++             +++             +++      +++  +++          +++       
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Akinjide Bankole">
+
+    <title>To-Dos'</title>
+    
+    <!-- ************Stylesheets************ -->
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-responsive.min.css" type="text/css"/>
+      <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" type="text/css"/>
+
+      <!-- Custom styles-->
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+
+    <!-- /header -->
+    <header id="header" class="">
+      <nav class="navbar navbar-default custom navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+          <!-- logo -->
+            <a href="#" class="navbar-brand topnav"><img src="assets/img/logo.png"></a>
+          <!-- logo End-->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /header End -->
+     
+      <!-- /section -->
+      <section>
+        <div class="panel panel-default ">
+          <div class="panel-body">
+            <div id="form">
+
+              <!-- Container storing Input, Priority and Add, Delete Buttons -->
+                  <div class="container">
+                    <div class="row">
+                <!-- Input -->
+                        <div class="col-md-8">
+                          <input id="textBox" class="col-md-12" type="" placeholder = "Add a new task, just start typing..."/>
+                        </div>
+                <!-- Priority Button -->
+                        <div class="col-md-2" id="dbtn">
+                          <select id="selectBox">
+                            <option value="" disabled selected style="display: none;">Priority</option>
+                            <option value="3">High</option>
+                            <option value="2">Medium</option>
+                            <option value="1">Low</option>
+                            <option value="0">None</option>
+                          </select>
+                        </div>
+                <!-- Add and Delete Buttons -->
+                        <div class="col-md-2 selection-buttons">
+                          <button class="button" type="addButton" onclick="addList('ToDoListTable')"><i class="fa fa-plus"></i> Add Task</button>
+                          <button class="button" type="deletebutton" onclick="deleteList('ToDoListTable')"><i class="fa fa-times"></i> Delete</button>
+                        </div>
+                    </div>
+                  </div>
+             <!-- Container storing Input, Priority and Add, Delete Buttons End-->
+
+                <!-- Stores User Task -->
+                    <div class="row">
+                      <div class="col-md-12">
+                       <table id="ToDoListTable">
+                       </table>
+                     </div>
+                    </div>
+                <!-- Stores User Task End-->
+               <div class="cls"></div>
+                
+              <!-- Clears all done and undone tasks button -->
+                 <div class="row">
+                  <div class="col-md-4">
+                    <button class="btn" onclick="deleteAllList('ToDoListTable')"><i class="fa fa-trash-o"></i> Clear All</button>
+                  </div>
+                </div>
+            <!-- Clears all done and undone tasks button End-->
+            </div>
+          </div>
+        </div>
+          <div class="wrapper"></div>
+      </section>
+      <!-- /section End-->
+
+
+
+
+      <!-- /footer -->
+          <img class="hbg" src="assets/img/hbg.png">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <blockquote>To-Dos' is a Web Applicaion that helps its user store their tasks, its fun to use and trust me you'll enjoy it. Enjoy!!</blockquote>
+              </div>
+
+          <!-- /Social Media Buttons -->
+              <div class="col-md-5 banner-social-buttons">
+                <div class="col-md-12">
+                  <div>
+                    <span class="subheading2">Have questions? We are here (maybe).</span>
+                  </div>
+                  <div class="col-md-12">
+                    <ul class="list-inline social-buttons">
+                      <li class="social-btn">
+                        <a href="#" class="btn btn-default social-buttons-a" title="Twitter"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                      </li>
+                      <li class="social-btn">
+                        <a href="#" class="btn btn-default social-buttons-a" title="Facebook"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                      </li>
+                      <li class="social-btn">
+                        <a href="#" class="btn btn-default social-buttons-a" title="Github"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          <!-- /Social Media Buttons  End -->
+
+            </div>
+          </div>
+        </footer>
+
+      <!-- /footer End-->
+
+
+
+<!--   *********************  Scripts ********************** -->
+    <!-- External Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js" type = "text/javascript"></script>
+    <script src="assets/js/jqscript.js" type="text/javascript"></script>
+  </body>
+</html>
