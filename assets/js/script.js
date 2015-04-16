@@ -44,22 +44,22 @@
         priorityBoxText.name = "textLabel";
 
 //Sets priority Color for every condition selected
-  if (priorityText === "High") {
-       priorityBoxText.style.backgroundColor = "green";
+    if (priorityText === "High") {
+     priorityBoxText.style.backgroundColor = "green";
     }
     else if (priorityText === "Medium") {
-        priorityBoxText.style.backgroundColor = "orange";
-      }
-      else if (priorityText === "Low") {
-            priorityBoxText.style.backgroundColor = "red";
-        }
-        else if (priorityText === "None") {
-              priorityBoxText.style.backgroundColor = "transparent";
-        } 
-          else {
-               priorityBoxText.style.backgroundColor = "transparent";
-               priorityBoxText.style.color = "transparent";
-   }
+      priorityBoxText.style.backgroundColor = "orange";
+    }
+    else if (priorityText === "Low") {
+      priorityBoxText.style.backgroundColor = "red";
+    }
+    else if (priorityText === "None") {
+      priorityBoxText.style.backgroundColor = "transparent";
+    } 
+    else {
+     priorityBoxText.style.backgroundColor = "transparent";
+     priorityBoxText.style.color = "transparent";
+    }
 
     addCell.appendChild(cellValue);
     addPriorityLabel.appendChild(priorityBoxText);
@@ -72,7 +72,8 @@
   function getTableLength(rows) {
       return rows.rows.length;
   }
-
+          var date = new Date();
+          document.getElementById("d").innerHTML = date.toUTCString();
 
 // Deletes selected lists
   function deleteList(table) {
@@ -80,30 +81,28 @@
       var tableLength = getTableLength(table);
 
       for (var i = 0; i < tableLength; i++) { // loop through the lists
-          var tableRow = table.rows[i]; 
-            var checkBox = tableRow.cells[1].childNodes[0];
+        var tableRow = table.rows[i]; 
+        var checkBox = tableRow.cells[1].childNodes[0];
               if (checkBox !== null && checkBox.checked === true) { // delete if checkbox selected
-                  table.deleteRow(i);
-                  tableLength--;
-                  i--
+                table.deleteRow(i);
+                tableLength--;
+                i--
           } // end if
       } // end for loop
   } // end deleteList method
 
-
-//Clears all Checked and Uncheck Box
+//Clears all Checked and Unchecked Box
 function deleteAllList(table) {
     var table = document.getElementById(table);
       var tableLength = getTableLength(table);
 
       for (var i = 0; i < tableLength; i++) { // loop through the lists
-          var tableRow = table.rows[i]; 
-            var checkBox = tableRow.cells[1].childNodes[0];
+        var tableRow = table.rows[i]; 
+        var checkBox = tableRow.cells[1].childNodes[0];
               if (checkBox !== null || checkBox.checked === true) { // delete if checkbox selected
-                  table.deleteRow(i);
-                  tableLength--;
-                  i--
+                table.deleteRow(i);
+                tableLength--;
+                i--
         } // end if
     } // end for loop
 } // end deleteList method
-

@@ -1,7 +1,8 @@
+//Arranges the list according to priorities
 function sortList(ToDoListTable) {
 
-    var $table = $('#ToDoListTable');
-      var rows = $table.find('tr').get();
+      var table = $('#ToDoListTable');
+      var rows = table.find('tr').get();
 
         rows.sort(function (a, b) {
             var keyA = $(a).attr('id');
@@ -15,6 +16,6 @@ function sortList(ToDoListTable) {
           return 0;
         });
       $.each(rows, function (index, row) {
-          $table.children('tbody').append(row);
+          table.children('tbody').append(row);
   });
 }
