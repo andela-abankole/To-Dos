@@ -80,7 +80,6 @@ section {margin-top: 100px;}
       }
       input[type="text"]:focus{
         outline: none !important;
-        /*border-bottom: 1px solid #777;*/
         color: #000;
         opacity: 1;
       }
@@ -139,8 +138,7 @@ section {margin-top: 100px;}
           font-size: 16px;
           color: #888;
         }
-.wrapper {height: 77px;}
-
+.wrapper {height: 61px;}
 
 /****************** Footer *******************/
 .hbg {
@@ -151,11 +149,15 @@ section {margin-top: 100px;}
     footer {
       border-top: 4px solid #777;
       padding-top: 15px; 
-      height: 100px;
-      background-color: #fcfcfa;
+      height: 115px;
+      background-color: #FFFFFF;
     }
       .social-btn {padding: 10px 5px 5px 5px;}
     blockquote {font-size: 14px;}
       .social-buttons-a{padding: 12px;}
       .social-buttons { margin: -5px 0;}
       .banner-social-buttons {padding: 2px;} 
+
+  .img-responsive {
+    height: 86px;
+  }
