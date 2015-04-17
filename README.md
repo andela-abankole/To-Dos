@@ -10,7 +10,7 @@ Author [Akinjide Bankole](https://twitter.com/JideBhanks)
 
 
 ## Showcase Demo
-View the gh-page  [showcase demo](http://) to see the page in action. The showcase provides a full preview of the project.
+View the gh-page  [showcase demo](http://JideBhanks.github.io/To-Dos) to see the page in action. The showcase provides a full preview of the project.
 
 
 ## How To Use And Interface
