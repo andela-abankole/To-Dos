@@ -113,10 +113,10 @@ function deleteAllList(table) {
       for (var i = 0; i < tableLength; i++) { // loop through the lists
         var tableRow = table.rows[i]; 
         var checkBox = tableRow.cells[1].childNodes[0];
-              if (checkBox !== null || checkBox.checked === true) { // delete if checkbox selected
+              if (checkBox !== null || checkBox.checked === true) { // delete if checkbox selected or not
                 table.deleteRow(i);
                 tableLength--;
                 i--
         } // end if
     } // end for loop
-} // end deleteList method
+} // end deleteAllList method
