@@ -22,7 +22,6 @@
     <title>To-Dos'</title>
     
     <!-- ************Stylesheets************ -->
-
       <!-- Bootstrap -->
       <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-responsive.min.css" type="text/css"/>
       <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" type="text/css"/>
@@ -35,26 +34,22 @@
 
   </head>
   <body>
-
     <!-- /header -->
     <header id="header" class="">
       <nav class="navbar navbar-default custom navbar-fixed-top">
         <div class="container">
-
       <!-- logo -->
             <div class="navbar-header pull-right rt-logo">
                 <a class="navbar-brand" href="#">
                     <img alt="Brand" src="assets/img/rt-logo.png">
                 </a>
             </div>
-
             <div class="navbar-header pull-left">
                 <a class="navbar-brand" href="#">
                     <img alt="Brand" src="assets/img/lt-logo.png">
                 </a>
             </div>
       <!-- logo End-->
-
         </div>
       </nav>
     </header>
@@ -63,10 +58,9 @@
 
       <!-- /section -->
       <section>
-        <div class="panel panel-default ">
+        <div class="panel panel-default">
           <div class="panel-body">
             <div id="form">
-
               <!-- Container storing Input, Priority and Add, Delete Buttons -->
                   <div class="container">
                     <div class="row">
@@ -76,7 +70,7 @@
                         </div>
                 <!-- Priority Button -->
                         <div class="col-md-2" id="dbtn">
-                          <select id="selectBox">
+                          <select id="selectBox" class="btn btn-default">
                             <option value="" disabled selected style="display: none;">Priority</option>
                             <option value="3">High</option>
                             <option value="2">Medium</option>
@@ -92,7 +86,6 @@
                     </div>
                   </div>
              <!-- Container storing Input, Priority and Add, Delete Buttons End-->
-
                 <!-- Stores User Task -->
                     <div class="row">
                       <div class="col-md-12">
@@ -101,15 +94,14 @@
                        <p> All Post for 
                          <date id="d"></date>
                        </p>
-                     </div>
+                      </div>
                     </div>
                 <!-- Stores User Task End-->
                <div class="cls"></div>
-    
               <!-- Clears all done and undone tasks button -->
                  <div class="row" style="margin-top: 10px;">
                   <div class="col-md-4">
-                    <button class="btn" onclick="deleteAllList('ToDoListTable')"><i class="fa fa-trash-o"></i> Clear All</button>
+                    <button class="btn btn-danger" onclick="deleteAllList('ToDoListTable')"><i class="fa fa-trash-o"></i> Clear All</button>
                   </div>
                 </div>
             <!-- Clears all done and undone tasks button End-->
@@ -126,10 +118,12 @@
         <footer>
           <div class="container">
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-5">
                 <blockquote>To-Dos' is a Web Applicaion that helps stores your tasks, its fun and easy to use. <small>Designed by Akinjide Bankole</small></blockquote>
               </div>
-
+              <div class="col-md-2">
+                  <a href="http://andela.co"><img class="img-responsive" src="assets/img/andela-logo.png"></a>
+              </div>
           <!-- /Social Media Buttons -->
               <div class="col-md-5 banner-social-buttons">
                 <div class="col-md-12">
@@ -155,7 +149,6 @@
                 </div>
               </div>
           <!-- /Social Media Buttons  End -->
-
             </div>
           </div>
         </footer>
@@ -169,6 +162,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/script.js" type = "text/javascript"></script>
-    <script src="assets/js/jqscript.js" type="text/javascript"></script>
+    <script src="assets/js/sort-script.js" type="text/javascript"></script>
   </body>
 </html>
