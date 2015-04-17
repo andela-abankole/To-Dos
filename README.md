@@ -4,7 +4,7 @@ To-Do Application
 # To-Dos' v1.0
 
 ## About
-To-Dos' is a web application that allows users store list of things they want to do. To-Dos' is an Andela project created using HTML, CSS, Bootstrap, javaScript.
+To-Dos' is a web application that allows users store list of things they want to do. To-Dos' is an Andela project created using HTML, CSS, Bootstrap, Font-Awesome, javaScript.
 
 Author [Akinjide Bankole](https://twitter.com/JideBhanks)
 
